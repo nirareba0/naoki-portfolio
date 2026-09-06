@@ -196,6 +196,8 @@ body[data-heat="cold"] .ember-glow { opacity: .15; }
 .price-note { font-size: 12px; color: var(--paper-3); }
 
 /* AI導入: 3段の価格表 */
+.service .lead-copy { color: var(--paper); font-family: var(--font-serif); font-size: 17px; line-height: 1.9; margin-bottom: 14px; }
+.service-side .method { font-size: 14px; color: var(--paper-2); margin: -6px 0 6px; padding-left: 12px; border-left: 2px solid var(--ember); }
 .tiers { display: grid; gap: 14px; margin-top: 8px; }
 .tier { border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; background: var(--coal); }
 .tier h5 { font-family: var(--font-serif); font-size: 15px; margin: 0 0 8px; color: var(--ember-text); letter-spacing: .06em; }
