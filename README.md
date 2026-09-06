@@ -11,7 +11,10 @@
 | `privacy.html` | プライバシーポリシー |
 | `tokushoho.html` | 特定商取引法に基づく表記 |
 | `style.css` / `script.js` | スタイルと、表示アニメーション・フォーム検証 |
-| `assets/portrait.jpg` | **ここに写真を置くとプロフィール欄に表示される**（縦長 4:5 推奨、800×1000px 程度） |
+| `assets/portrait.jpg` | **ここに写真を置くとプロフィール欄に表示される**（縦長 4:5、800×1000px 程度） |
+| `assets/ember.mp4` / `assets/ember-poster.jpg` | ヒーロー背景の熾火ループ動画（生成素材）。無い間は canvas が熾火を描く |
+| `assets/stilllife.jpg` | AI導入欄の「業務の静物」画像（生成素材）。無い間は表が整列するアニメーション |
+| `assets/case-01.png` / `assets/case-02.png` | 事例の画面キャプチャ |
 | `assets/favicon.svg` | ファビコン |
 | `robots.txt` / `.nojekyll` | 検索向け設定と GitHub Pages 用 |
 
@@ -39,6 +42,8 @@
 
 - [ ] 料金の目安（サービス欄の金額はすべて仮案）
 - [ ] 「にらレバ」の説明文（内容を推定して書いたもの）
+- [ ] 事例01（自社のシフト・予約自動化）の説明文が実態と合っているか
+- [ ] AI導入の3段料金（相場から仮決め）
 - [ ] 資格名の表記（ICF認定スクール CAM・CCAP）
 - [ ] 写真 `assets/portrait.jpg` の配置
 - [ ] canonical / og:image の URL

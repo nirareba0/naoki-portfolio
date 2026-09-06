@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>西村直樹｜熱意の編集者 — あなたを表現するサイト作成・伴走コーチング・探究ワークショップ（山梨・韮崎／オンライン）</title>
-<meta name="description" content="「編集を“あなた”にも」。対話であなたの熱意を掘り出し、伝わる形に編集します。地域おこし協力隊・個人事業主のホームページ作成、伴走コーチング、中高生・就活生向け探究ワークショップ。山梨県韮崎市を拠点に全国オンライン対応。">
+<title>西村直樹｜熱意の編集者 — サイト作成・AI導入・伴走コーチング（山梨・韮崎／オンライン）</title>
+<meta name="description" content="「編集を“あなた”にも」。対話であなたの熱意を掘り出し、伝わる形に編集します。協力隊・個人事業主のホームページ作成、飲食店から企業までのAI導入（予約サイト・シフト自動化・研修）、伴走コーチング。山梨県韮崎市を拠点に全国オンライン対応。">
 <link rel="canonical" href="https://example.com/"><!-- TODO: 公開URLに差し替え -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="西村直樹｜熱意の編集者">
-<meta property="og:description" content="対話であなたの熱意を掘り出し、伝わる形に編集します。サイト作成・伴走コーチング・探究ワークショップ。">
+<meta property="og:description" content="対話であなたの熱意を掘り出し、伝わる形に編集します。サイト作成・AI導入・伴走コーチング。">
 <meta property="og:image" content="https://example.com/assets/og.png"><!-- TODO -->
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#f7f3ec">
+<meta name="theme-color" content="#14120f">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,19 +25,19 @@
   "@type": "ProfessionalService",
   "name": "西村直樹｜熱意の編集者",
   "founder": { "@type": "Person", "name": "西村 直樹", "sameAs": ["https://www.facebook.com/profile.php?id=100005521930493"] },
-  "description": "対話であなたの熱意を掘り出し、伝わる形に編集します。地域おこし協力隊・個人事業主のホームページ作成、伴走コーチング、中高生・就活生向け探究ワークショップ。",
+  "description": "対話であなたの熱意を掘り出し、伝わる形に編集します。ホームページ作成、AI導入（予約サイト・シフト自動化・研修）、伴走コーチング。",
   "areaServed": ["山梨県韮崎市", "日本全国（オンライン）"],
   "address": { "@type": "PostalAddress", "addressLocality": "韮崎市", "addressRegion": "山梨県", "addressCountry": "JP" },
   "url": "https://example.com/",
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "あなたを表現するホームページ作成" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "伴走コーチング" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "自分を知る探究ワークショップ" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "退屈な作業を渡すAI導入" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "伴走コーチング" } }
   ]
 }
 </script>
 </head>
-<body>
+<body data-heat="warm">
 <a class="skip" href="#main">本文へスキップ</a>
 
 <header class="site-header">
@@ -46,7 +46,7 @@
     <nav class="nav" aria-label="メイン">
       <ul>
         <li><a href="#services">できること</a></li>
-        <li><a href="#flow">進め方</a></li>
+        <li><a href="#case">事例</a></li>
         <li><a href="#profile">プロフィール</a></li>
         <li><a href="#faq">よくある質問</a></li>
         <li class="cta-li"><a class="cta" href="#contact">相談する</a></li>
@@ -57,16 +57,24 @@
 
 <main id="main">
 
-  <!-- ========== HERO ========== -->
+  <!-- ========== HERO / 熾火 ========== -->
   <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-media heat-layer" aria-hidden="true">
+      <!-- 生成した熾火のループ動画を assets/ember.mp4 に置くと再生されます。無い間は canvas が熾火を描きます。 -->
+      <video id="ember-video" autoplay muted loop playsinline preload="none" poster="assets/ember-poster.jpg" hidden>
+        <source src="assets/ember.mp4" type="video/mp4">
+      </video>
+      <canvas id="ember-canvas"></canvas>
+      <div class="ember-glow"></div>
+    </div>
     <div class="wrap">
       <div>
         <p class="hero-kicker">EDIT YOUR ENTHUSIASM</p>
         <h1 class="headline" id="hero-title"><span class="w">編集を</span><span class="w you">あなた</span><span class="w">にも</span></h1>
         <p class="hero-lead">
-          名刺だけでは、あなたの熱は伝わらない。<br>
+          熱は、誰の中にもある。ただ、揺らぐ。<br>
           <strong>対話で熱意を掘り出し、伝わる形に編集する。</strong>
-          協力隊・個人事業主のホームページ作成、伴走コーチング、中高生・就活生の探究ワークショップ。
+          協力隊・個人事業主のホームページ作成、飲食店から企業までのAI導入、そして伴走コーチング。
         </p>
         <div class="hero-actions">
           <a class="btn" href="#contact">無料で相談してみる<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -76,8 +84,8 @@
       <aside class="hero-side" aria-label="信頼の根拠">
         <ul class="trust">
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span><b>西村 直樹</b>山梨県韮崎市を拠点に、全国オンライン対応</span></li>
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg><span><b>ICF認定スクール CAM・CCAP 取得</b>対話の技術を土台にしたコーチング</span></li>
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg><span><b>元ITエンジニア</b>設計から実装まで、自分の手で作る</span></li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg><span><b>ICF認定スクール CAM・CCAP／Google AI Specialization</b>対話の技術と、AIの実務知識</span></li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg><span><b>元ITエンジニア</b>自分の事業のシフトと予約も、自分で自動化して運用中</span></li>
         </ul>
       </aside>
     </div>
@@ -92,9 +100,9 @@
         <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h9a3 3 0 0 1 3 3v12H7a3 3 0 0 0-3 3z"/><path d="M20 5h-4v15h4z"/></svg>YOMU哲<span class="tag">哲学対話</span></li>
         <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v10H9l-5 4z"/></svg>コーチング<span class="tag">1on1</span></li>
         <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>サイト作成<span class="tag">WEB</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10M12 10a4 4 0 1 0-4-4M12 10a4 4 0 1 1 4-4"/></svg>探究ワークショップ<span class="tag">WORKSHOP</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>シフト自動化<span class="tag">AI</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3"/></svg>予約サイト<span class="tag">AI</span></li>
         <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h4"/></svg>ジャーナリング<span class="tag">内省</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-5h4v5"/></svg>ユースセンター<span class="tag">居場所</span></li>
       </ul>
       <ul aria-hidden="true">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-1.5.5-3 1.5-4 .3 1.2 1 2 2 2.5C10 8 11 5.5 12 3z"/></svg>にらレバ<span class="tag">LOCAL</span></li>
@@ -102,20 +110,39 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h9a3 3 0 0 1 3 3v12H7a3 3 0 0 0-3 3z"/><path d="M20 5h-4v15h4z"/></svg>YOMU哲<span class="tag">哲学対話</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v10H9l-5 4z"/></svg>コーチング<span class="tag">1on1</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>サイト作成<span class="tag">WEB</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V10M12 10a4 4 0 1 0-4-4M12 10a4 4 0 1 1 4-4"/></svg>探究ワークショップ<span class="tag">WORKSHOP</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>シフト自動化<span class="tag">AI</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3"/></svg>予約サイト<span class="tag">AI</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h4"/></svg>ジャーナリング<span class="tag">内省</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-5h4v5"/></svg>ユースセンター<span class="tag">居場所</span></li>
       </ul>
     </div>
   </div>
+
+  <!-- ========== 編集の実演（赤入れ） ========== -->
+  <section class="section" id="edit" aria-labelledby="edit-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">編集とは何か</p>
+        <h2 class="section-title" id="edit-title">説明するより、一度やってみせます。</h2>
+        <p class="section-lead">たとえば、よくある自己紹介の一文。ここに赤を入れると、こうなります。</p>
+      </div>
+      <div class="redpen reveal" id="redpen" aria-label="赤入れの実演">
+        <span class="label" aria-hidden="true">校正 / 第1稿</span>
+        <p class="draft">
+          <span class="strike">私はWeb制作とコーチングのサービスを提供しています。</span><span class="mark-caret" aria-hidden="true">∧</span><span class="ins">主語が「私」。相手の変化が無い。</span>
+        </p>
+        <p class="final">あなたの熱を、まだ会っていない人に伝わる形にします。</p>
+      </div>
+      <p class="redpen-note reveal">編集とは、飾ることではなく、要素を全部見たうえで「どこを見せて、どう見せるか」を決めること。文章でも、サイトでも、業務でも、あなたの進路でも、やることは同じです。</p>
+    </div>
+  </section>
 
   <!-- ========== PROBLEM ========== -->
   <section class="section" id="problem" aria-labelledby="problem-title">
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">こんなとき、声をかけてください</p>
-        <h2 class="section-title" id="problem-title">熱はある。でも、伝わっていない。</h2>
-        <p class="section-lead">熱意はみんなが持っています。形がさまざまなだけ。それを社会の型に嵌める行為が、営業であり、進学であり、就活です。ひとりで自分を見つめるとズレが生じ、団体に合わせると自分が薄まる。だから、第三者が要ります。</p>
+        <h2 class="section-title" id="problem-title">熱はある。でも、伝わっていない。回っていない。</h2>
+        <p class="section-lead">熱意はみんなが持っています。形がさまざまなだけ。それが名刺の上で薄まり、退屈な作業の中で冷め、ひとりで見つめるうちにズレていく。だから、第三者が要ります。</p>
       </div>
       <div class="problem-grid">
         <article class="problem-card reveal">
@@ -123,15 +150,14 @@
           <p>地域に入った協力隊、独立したばかりの個人事業主。「何をしている人か」を、相手が初めて会う前に知れる場所がない。</p>
         </article>
         <article class="problem-card reveal">
-          <h3 class="q">何をやりたいのか、自分でもわからない</h3>
-          <p>モチベーションが保てない。好きなことは別にある気がする。でも、その「好き」を仕事や進路にどう繋げればいいかが見えない。</p>
+          <h3 class="q">シフトと予約に、毎週何時間も溶けている</h3>
+          <p>店を回すのに手一杯で、本当にやりたかった仕込みや接客に時間が残らない。AIが使えると聞くが、何から手をつければいいかわからない。</p>
         </article>
         <article class="problem-card reveal">
-          <h3 class="q">推薦入試・就活で、自分を語れない</h3>
-          <p>志望理由書もエントリーシートも、書けば書くほど借り物の言葉になる。自分の言葉で語るための材料が、まだ掘れていない。</p>
+          <h3 class="q">やる気が出ない。何をやりたいのかもわからない</h3>
+          <p>モチベーションが保てない。好きなことは別にある気がする。でも、その「好き」を仕事や次の一歩にどう繋げればいいかが見えない。</p>
         </article>
       </div>
-      <p class="problem-note reveal">私がやるのは、あなたが何を面白いと思い、何に感動し、何を軽蔑しているかを聞くこと。その価値観の出どころを一緒に辿り、<em>構造として返す</em>こと。答えは渡しません。出発点を渡します。</p>
     </div>
   </section>
 
@@ -141,7 +167,7 @@
       <div class="section-head reveal">
         <p class="eyebrow">できること</p>
         <h2 class="section-title" id="services-title">3つの入口。どれも「対話」から始まります。</h2>
-        <p class="section-lead">料金は目安です。内容と期間によって変わるので、まず状況を聞かせてください。初回30分のヒアリングは無料です。</p>
+        <p class="section-lead">料金は目安です（税込）。内容と期間によって変わるので、まず状況を聞かせてください。初回30分のヒアリングは無料です。</p>
       </div>
 
       <div class="services">
@@ -164,16 +190,60 @@
             </div>
             <div>
               <h4>料金の目安</h4>
-              <p class="price"><span class="num">15万円</span><span class="unit">〜（税込）／制作一式</span></p>
+              <p class="price"><span class="num">15万円</span><span class="unit">〜／制作一式</span></p>
               <p class="price"><span class="num">1万円</span><span class="unit">〜／月　更新・伴走（任意）</span></p>
               <p class="price-note">ページ数・撮影・ドメイン取得などにより変動します。見積もりは無料です。</p>
             </div>
           </div>
         </article>
 
-        <article class="service reveal" id="service-coaching">
+        <article class="service reveal" id="service-ai">
           <div>
             <p class="service-no">02</p>
+            <h3>退屈な作業を渡す、AI導入</h3>
+            <p class="for">個人事業主・飲食店・小規模店舗から、部署単位で導入したい企業まで</p>
+            <p class="desc">シフト作成、予約受付、日報や告知文の下書き。毎週同じ手を動かしている作業をAIと既製ツールに渡し、あなたの時間を熱のある仕事に戻します。自分の事業のシフトと予約を自作して回している経験から、「作りすぎない」導入を設計します。<strong>お客様の機密情報は預かりません。</strong>設定はダミーデータで行い、本番のデータはあなた自身が投入する運用です。</p>
+            <div class="stilllife heat-layer" id="stilllife" aria-hidden="true">
+              <!-- 生成した「業務の静物」を assets/stilllife.jpg に置くと表示されます。無い間は表が整列するアニメーションを表示。 -->
+              <img src="assets/stilllife.jpg" alt="" width="1600" height="900" loading="lazy" onerror="this.remove()">
+              <div class="grid-anim"></div>
+              <span class="cap">手書きのシフト表が、整う。</span>
+            </div>
+          </div>
+          <div class="service-side">
+            <h4>3段で進めます</h4>
+            <div class="tiers">
+              <div class="tier">
+                <h5>1. 棚卸し診断</h5>
+                <table><tr><td>90分の対話で業務を棚卸し、どこにAIやツールを入れるかの診断書をお渡し</td><td>3万円</td></tr></table>
+              </div>
+              <div class="tier">
+                <h5>2. 導入して、渡す</h5>
+                <table>
+                  <tr><td>予約サイト構築（既製の予約サービス連携、ページ込み）</td><td>20万円〜</td></tr>
+                  <tr><td>業務効率化1本（シフト自動作成など。ツール選定・設定・引き渡し）</td><td>15万円〜</td></tr>
+                  <tr><td>複数業務まとめて（3本まで）</td><td>40万円〜</td></tr>
+                </table>
+                <p class="note">既製ツールの月額利用料は別途。作らずに済むものは作りません。</p>
+              </div>
+              <div class="tier">
+                <h5>3. 使い方研修と伴走</h5>
+                <table>
+                  <tr><td>研修 半日（3時間・人数無制限）</td><td>30万円</td></tr>
+                  <tr><td>研修 1日（6時間）</td><td>50万円</td></tr>
+                  <tr><td>研修 12時間プログラム（2日）</td><td>90万円</td></tr>
+                  <tr><td>伴走 個人事業主・小店舗（月1定例＋チャット）</td><td>月5万円</td></tr>
+                  <tr><td>伴走 企業（月2定例＋定着フォロー）</td><td>月12万円</td></tr>
+                </table>
+                <p class="note">12時間プログラムは、人材開発支援助成金の対象となる訓練時間を満たす設計です（適用可否は管轄労働局にご確認ください）。</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="service reveal" id="service-coaching">
+          <div>
+            <p class="service-no">03</p>
             <h3>あなたを発揮し続ける伴走コーチング</h3>
             <p class="for">退屈している、やる気が出ない、次の一歩が見えない社会人・経営者・学生の方へ</p>
             <p class="desc">熱は揺らぐものです。それを観測し、絶やさないための薪を焚べるのがコーチングだと考えています。ICF認定スクールで学んだ対話の技術を土台に、「そのモチベーションって、そもそも何？」から一緒に掘ります。1回で終わらず、継続の中で変化を見ます。</p>
@@ -189,37 +259,46 @@
             </div>
             <div>
               <h4>料金の目安</h4>
-              <p class="price"><span class="num">5,000円</span><span class="unit">（税込）／初回体験60分</span></p>
+              <p class="price"><span class="num">5,000円</span><span class="unit">／初回体験60分</span></p>
               <p class="price"><span class="num">2万円</span><span class="unit">〜／月　月2回コース</span></p>
               <p class="price-note">3か月単位での契約を基本としています。</p>
             </div>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
 
-        <article class="service reveal" id="service-workshop">
-          <div>
-            <p class="service-no">03</p>
-            <h3>自分を知る探究ワークショップ</h3>
-            <p class="for">推薦入試を控えた中高生、就活中の学生、その保護者・先生・支援者の方へ</p>
-            <p class="desc">「あなたの熱意はどこから来ている？」を、哲学対話の手法で掘る場です。志望理由書や自己分析を、借り物ではない自分の言葉で書けるようになることを目指します。学校・ユースセンター・塾などでのグループ実施と、個人向けの少人数実施の両方に対応します。</p>
-          </div>
-          <div class="service-side">
-            <div>
-              <h4>含まれるもの</h4>
-              <ul class="deliver">
-                <li>90〜120分のワークショップ（対面／オンライン）</li>
-                <li>自分の「好き」と「嫌い」を棚卸しするワークシート</li>
-                <li>ご希望に応じて、個別対話へのつなぎ</li>
-              </ul>
-            </div>
-            <div>
-              <h4>料金の目安</h4>
-              <p class="price"><span class="num">3万円</span><span class="unit">〜（税込）／団体・1回</span></p>
-              <p class="price"><span class="num">8,000円</span><span class="unit">（税込）／個人・1名</span></p>
-              <p class="price-note">18歳未満の方は、保護者の方からお申し込みください。</p>
-            </div>
-          </div>
-        </article>
+  <!-- ========== CASE ========== -->
+  <section class="section" id="case" aria-labelledby="case-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">事例</p>
+        <h2 class="section-title" id="case-title">まず、自分の事業で試しています。</h2>
+        <p class="section-lead">人に勧める前に、自分が毎日使っているものだけを提案します。</p>
+      </div>
+      <div class="case reveal">
+        <div>
+          <p class="meta">CASE 01 — 自社運用</p>
+          <h3>自分の事業のシフトと予約を、自作して回す</h3>
+          <p>自分の活動のシフト管理と予約受付を、Notion と Google Apps Script で組んで運用しています。希望の集約、枠の自動生成、確定の通知までを自動化し、毎週の調整作業をほぼゼロにしました。この構成をそのまま渡すのではなく、お客様の規模に合う既製ツールに置き換えて導入します。</p>
+          <div class="stack"><span>Notion</span><span>Google Apps Script</span><span>Claude</span><span>Codex</span></div>
+        </div>
+        <div class="case-figure">
+          <!-- 実際の画面のスクリーンショットを assets/case-01.png に置くと表示されます -->
+          <img src="assets/case-01.png" alt="自作したシフト・予約管理の画面" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='画面キャプチャ準備中'">
+        </div>
+      </div>
+      <div class="case reveal" style="margin-top:20px">
+        <div>
+          <p class="meta">CASE 02 — このサイト</p>
+          <h3>このサイト自体が、編集の事例です</h3>
+          <p>誰にも見せない前提で書いた「原典」という文書から、事業計画、そしてこのページの言葉を翻訳して作りました。上の赤入れは、その過程で実際に起きたことです。あなたのサイトも、同じ手順で作ります。</p>
+          <div class="stack"><span>ヒアリング対話</span><span>コピー編集</span><span>設計・実装</span></div>
+        </div>
+        <div class="case-figure">
+          <img src="assets/case-02.png" alt="このサイトの制作過程" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='制作過程の画像 準備中'">
+        </div>
       </div>
     </div>
   </section>
@@ -230,13 +309,13 @@
       <div class="section-head reveal">
         <p class="eyebrow">進め方</p>
         <h2 class="section-title" id="flow-title">聞く。掘る。編集する。渡す。</h2>
-        <p class="section-lead">サイト作成でもコーチングでも、流れは同じです。作るものが変わるだけ。</p>
+        <p class="section-lead">サイト作成でも、AI導入でも、コーチングでも、流れは同じです。作るものが変わるだけ。</p>
       </div>
       <ol class="flow">
         <li class="reveal"><h3>相談する</h3><p>下のフォームから、いまの状況をひとことで。30分のオンラインヒアリングを無料で行い、合いそうかをお互いに確かめます。</p></li>
-        <li class="reveal"><h3>対話で掘る</h3><p>何が好きで、なぜ好きか。何が嫌で、なぜ嫌か。価値観の出どころを一緒に辿ります。ここが一番時間をかける工程です。</p></li>
-        <li class="reveal"><h3>編集する</h3><p>掘り出したものから、どこを見せて、どう見せるかを決めます。サイトならコンセプトとコピー、コーチングなら次の一歩の設計。</p></li>
-        <li class="reveal"><h3>渡して、伴走する</h3><p>形にしてお渡しします。終着点は渡しません。その後も熱が揺らいだときに戻ってこられる場所として、続けて関わります。</p></li>
+        <li class="reveal"><h3>対話で掘る</h3><p>何が好きで、なぜ好きか。何が面倒で、なぜ面倒か。価値観と業務の出どころを一緒に辿ります。ここが一番時間をかける工程です。</p></li>
+        <li class="reveal"><h3>編集する</h3><p>掘り出したものから、どこを見せて、どう見せるか。何を人が持ち、何をAIに渡すかを決めます。</p></li>
+        <li class="reveal"><h3>渡して、伴走する</h3><p>形にしてお渡しします。終着点は渡しません。熱が揺らいだときに戻ってこられる場所として、続けて関わります。</p></li>
       </ol>
     </div>
   </section>
@@ -247,8 +326,7 @@
       <div class="profile">
         <div class="reveal">
           <div class="portrait">
-            <!-- 写真を assets/portrait.jpg に置くと表示されます -->
-            <img src="assets/portrait.jpg" alt="西村直樹のポートレート" width="800" height="1000" loading="lazy" onerror="this.remove()">
+            <img src="assets/portrait.jpg" alt="西村直樹のポートレート。笑顔で人と話している" width="800" height="1000" loading="lazy" onerror="this.remove()">
             <div class="placeholder" aria-hidden="true">西村 直樹</div>
           </div>
         </div>
@@ -259,10 +337,11 @@
           <div class="profile-story">
             <p>キャリアの出発点はITエンジニアでした。仕事は退屈で、タイパだけで動く日々。その退屈から逃れるために会社を辞め、個人として働く道を選びました。</p>
             <p>転機は、批評ラジオやエッセイとの出会いです。自分の視野の狭さ、言語化の稚拙さを自覚し、「では何をすればいいか」を探る行為そのものが面白くなった。内省にハマり、ジャーナリングが続き、哲学対話の場に通うようになりました。</p>
-            <p>いまは山梨県韮崎市を拠点に、哲学対話のファシリテーション、地域の場づくり、コーチング、そしてサイト制作をしています。共通しているのは「その人の熱意を観測し、伝わる形に編集する」こと。夢中こそが退屈を救う、と信じています。</p>
+            <p>いまは山梨県韮崎市を拠点に、哲学対話のファシリテーション、地域の場づくり、コーチング、サイト制作とAI導入をしています。共通しているのは「その人の熱意を観測し、伝わる形に編集する」こと。退屈な作業はAIに渡し、夢中になれることに時間を戻す。夢中こそが退屈を救う、と信じています。</p>
           </div>
           <dl class="creds">
-            <div><dt>資格</dt><dd>ICF（国際コーチング連盟）認定スクールにて CAM・CCAP 取得</dd></div>
+            <div><dt>資格</dt><dd>ICF（国際コーチング連盟）認定スクールにて CAM・CCAP 取得／Google AI Specialization 修了</dd></div>
+            <div><dt>開発</dt><dd>Claude・Codex を使った開発、Google Apps Script、Notion による業務自動化</dd></div>
             <div><dt>専門</dt><dd>コーチング／哲学対話ファシリテーション／Web設計・実装</dd></div>
             <div><dt>拠点</dt><dd>山梨県韮崎市（全国オンライン対応）</dd></div>
           </dl>
@@ -314,27 +393,31 @@
       <div class="faq reveal">
         <details>
           <summary>まだ何を頼みたいか、はっきりしていません。相談してもいいですか？</summary>
-          <p class="a">はい。むしろ、はっきりしていない状態からの対話が一番の得意分野です。「なんとなくサイトが要る気がする」「何かを変えたいが何かがわからない」で構いません。</p>
+          <p class="a">はい。むしろ、はっきりしていない状態からの対話が一番の得意分野です。「なんとなくサイトが要る気がする」「AIを使えと言われるが何から」「何かを変えたいが何かがわからない」で構いません。</p>
+        </details>
+        <details>
+          <summary>AI導入で、うちの顧客情報や売上データを渡す必要がありますか？</summary>
+          <p class="a">ありません。設定や検証はダミーデータで行い、本番の顧客情報・従業員情報・売上はお客様自身が投入します。管理画面の権限は納品時にお返しします。「AIに入れてよい情報・いけない情報」の線引きを1枚の文書にしてお渡しし、それ自体を研修の教材にします。</p>
+        </details>
+        <details>
+          <summary>AIツールを自作してもらえますか？</summary>
+          <p class="a">作らずに済むなら作りません。予約もシフトも、月数千円から使える既製サービスが揃っています。私の役割は、業務を棚卸しして合うものを選び、設定して、使い方を渡すこと。既製で足りない部分だけを、Google Apps Script などで最小限つなぎます。</p>
         </details>
         <details>
           <summary>山梨県外・遠方でも依頼できますか？</summary>
-          <p class="a">できます。ヒアリング、コーチング、ワークショップはすべてオンラインで実施可能です。対面をご希望の場合は、山梨県内は伺えることが多く、県外は交通費をご相談させてください。</p>
+          <p class="a">できます。ヒアリング、コーチング、研修はすべてオンラインで実施可能です。対面をご希望の場合は、山梨県内は伺えることが多く、県外は交通費をご相談させてください。</p>
         </details>
         <details>
           <summary>サイトの公開後、自分で更新できますか？</summary>
           <p class="a">できるように作ります。更新方法のレクチャーを納品に含めています。「自分ではやりたくない」場合は、月額の更新・伴走プランで代わりに行います。</p>
         </details>
         <details>
-          <summary>コーチングは何回くらい続けるものですか？</summary>
-          <p class="a">まず初回体験を受けていただき、合いそうであれば3か月（月2回・全6回）を一区切りとしています。熱は揺らぐものなので、1回で答えを出すより、揺らぎを一緒に観測する期間を大切にしています。</p>
-        </details>
-        <details>
           <summary>お断りする依頼はありますか？</summary>
-          <p class="a">あります。工数に対して報酬が著しく見合わないもの、私が提供しているのはメンター的な伴走であって助言やケアだけを目的とするもの、政治団体・宗教団体・反社会的勢力に関わるものはお断りしています。合わないと感じた場合も、理由を添えて正直にお伝えします。</p>
+          <p class="a">あります。工数に対して報酬が著しく見合わないもの、機密情報の管理そのものを委託したいもの、私が提供しているのはメンター的な伴走であって助言やケアだけを目的とするもの、政治団体・宗教団体・反社会的勢力に関わるものはお断りしています。合わないと感じた場合も、理由を添えて正直にお伝えします。</p>
         </details>
         <details>
           <summary>支払い方法とキャンセルについて教えてください。</summary>
-          <p class="a">銀行振込を基本としています。サイト作成は着手時と納品時の2回払い、コーチングは月初の前払いです。キャンセル・返金の条件は<a href="tokushoho.html">特定商取引法に基づく表記</a>に記載しています。</p>
+          <p class="a">銀行振込を基本としています。制作・導入は着手時と納品時の2回払い、コーチングと伴走は月初の前払い、研修は実施日の前日までです。キャンセル・返金の条件は<a href="tokushoho.html">特定商取引法に基づく表記</a>に記載しています。</p>
         </details>
       </div>
     </div>
@@ -354,8 +437,8 @@
             <h3>こんな書き方で大丈夫です</h3>
             <ul>
               <li>「協力隊2年目。活動報告を出せるサイトが欲しい」</li>
-              <li>「独立したけど、何屋なのか説明できない」</li>
-              <li>「高2の子どもが推薦入試。志望理由書で悩んでいる」</li>
+              <li>「飲食店。シフト作成に毎週3時間かかっている」</li>
+              <li>「社員10人。AI研修を一度やってみたい」</li>
               <li>「やる気が出ない。話を聞いてほしい」</li>
             </ul>
           </div>
@@ -365,7 +448,7 @@
           </div>
         </aside>
 
-        <!-- FormSubmit: 初回送信後に届く確認メールで有効化。有効化後は下の action を発行された英数字エイリアスURLに差し替えるとメールアドレスが露出しません。 -->
+        <!-- FormSubmit: 初回送信後に届く確認メールで有効化。有効化後は action を発行された英数字エイリアスURLに差し替えるとメールアドレスが露出しません。 -->
         <form class="form" id="contact-form" action="https://formsubmit.co/naoki.nishimura@kawarabe.com" method="POST" novalidate>
           <input type="hidden" name="_subject" value="【サイト】お問い合わせ">
           <input type="hidden" name="_template" value="table">
@@ -377,33 +460,29 @@
             <input id="name" name="お名前" type="text" required autocomplete="name" aria-describedby="name-err">
             <p class="error" id="name-err">お名前を入力してください。ニックネームでも構いません。</p>
           </div>
-
           <div class="field">
             <label for="email">メールアドレス <span class="req">必須</span></label>
             <input id="email" name="メールアドレス" type="email" required autocomplete="email" inputmode="email" aria-describedby="email-hint email-err">
             <p class="hint" id="email-hint">返信先になります。入力ミスがあると返信が届きません。</p>
             <p class="error" id="email-err">メールアドレスの形式で入力してください（例: name@example.com）。</p>
           </div>
-
           <div class="field">
             <label for="kind">ご相談の種類 <span class="opt">任意</span></label>
             <select id="kind" name="ご相談の種類">
               <option value="">選んでください（決まっていなければ空欄で）</option>
               <option>ホームページ作成</option>
+              <option>AI導入（予約・シフトなどの業務効率化）</option>
+              <option>AI研修・伴走（企業・団体）</option>
               <option>伴走コーチング</option>
-              <option>探究ワークショップ（団体）</option>
-              <option>探究ワークショップ（個人）</option>
               <option>その他・まだわからない</option>
             </select>
           </div>
-
           <div class="field">
             <label for="message">いまの状況・聞きたいこと <span class="req">必須</span></label>
             <textarea id="message" name="ご相談内容" required minlength="10" aria-describedby="message-hint message-err"></textarea>
-            <p class="hint" id="message-hint">ひとことでも大丈夫です。整っていなくて構いません。</p>
+            <p class="hint" id="message-hint">ひとことでも大丈夫です。整っていなくて構いません。機密情報は書かないでください。</p>
             <p class="error" id="message-err">10文字以上で入力してください。</p>
           </div>
-
           <div class="field">
             <label class="consent" for="consent">
               <input id="consent" name="プライバシーポリシー同意" type="checkbox" required value="同意する" aria-describedby="consent-err">
@@ -411,7 +490,6 @@
             </label>
             <p class="error" id="consent-err">送信にはプライバシーポリシーへの同意が必要です。</p>
           </div>
-
           <button class="btn" type="submit">相談を送る<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <p class="form-note">18歳未満の方は、保護者の方からご連絡ください。送信後、確認画面に移ります。</p>
         </form>
@@ -428,6 +506,7 @@
       <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=100005521930493" target="_blank" rel="noopener">Facebook</a></li>
     </ul>
+    <p class="ai-note">このサイトの熾火・机上の静物などの背景映像・画像は、生成AIで制作したイメージです。人物写真と活動の写真は実写です。</p>
   </div>
 </footer>
 
