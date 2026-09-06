@@ -12,7 +12,7 @@
 | `tokushoho.html` | 特定商取引法に基づく表記 |
 | `style.css` / `script.js` | スタイルと、表示アニメーション・フォーム検証 |
 | `assets/portrait.jpg` | **ここに写真を置くとプロフィール欄に表示される**（縦長 4:5、800×1000px 程度） |
-| `assets/ember.mp4` / `assets/ember-poster.jpg` | ヒーロー背景の熾火ループ動画（生成素材）。無い間は canvas が熾火を描く |
+| `assets/ember.mp4` / `assets/ember-poster.jpg` | ヒーロー背景の熾火ループ動画（Wan 2.2 TI2V-5B をローカルGPUで生成、4秒ループ）。再生が始まるまでは静止画＋canvas |
 | `assets/stilllife.jpg` | AI導入欄の「業務の静物」画像（生成素材）。無い間は表が整列するアニメーション |
 | `assets/case-01.png` / `assets/case-02.png` | 事例の画面キャプチャ |
 | `assets/favicon.svg` | ファビコン |
@@ -55,3 +55,14 @@
 python -m http.server 8765
 ```
 → http://127.0.0.1:8765/
+
+## 動画の再生成（ローカルGPU）
+
+ComfyUI は `D:\ComfyUI-work\ComfyUI`（venv 同梱）、モデルは `D:\ComfyUI-work\models`。
+
+```
+cd D:\ComfyUI-work\ComfyUI && venv\Scripts\python.exe main.py --listen 127.0.0.1 --port 8188 --disable-auto-launch
+python gen\wan_i2v.py gen\ember-start.png ember_v2 --frames 121 --w 1280 --h 704 --seed <任意>
+ffmpeg -framerate 24 -i D:\ComfyUI-work\ComfyUI\output\ember_v2_%05d_.png -c:v libx264 -pix_fmt yuv420p -crf 18 gen\ember_v2_raw.mp4
+```
+その後、先頭1秒を末尾にクロスフェードして継ぎ目のないループにする（`gen/` の手順は git 履歴のコミットメッセージ参照）。RTX 4070 Ti で1本約18分。

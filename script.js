@@ -49,11 +49,15 @@
     // 動画ファイルが存在するか軽く確認（HEAD）。あれば動画を採用。
     fetch(video.querySelector('source').getAttribute('src'), { method: 'HEAD' })
       .then(function (r) {
-        if (r.ok) {
+        if (r.ok && !reduce) {
+          var pic = document.querySelector('.hero-media picture');
+          video.addEventListener('playing', function () {
+            if (pic) pic.hidden = true;
+            if (canvas) canvas.hidden = true;
+            useCanvas = false;
+          }, { once: true });
           video.hidden = false; video.preload = 'auto'; video.load();
-          if (canvas) canvas.hidden = true;
-          useCanvas = false;
-          if (reduce) { video.pause(); video.removeAttribute('autoplay'); }
+          var p = video.play(); if (p && p.catch) p.catch(function () {});
         }
       }).catch(function () {});
   }
