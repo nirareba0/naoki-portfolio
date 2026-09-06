@@ -90,7 +90,8 @@ body[data-heat="cold"] .ember-glow { opacity: .15; }
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; min-height: 92svh; display: grid; align-items: end; padding: clamp(56px, 9vw, 110px) 0 clamp(40px, 6vw, 72px); border-bottom: 1px solid var(--line); }
 .hero-media { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.hero-media video, .hero-media canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-media video, .hero-media canvas, .hero-media .ember-still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 72%; }
+.hero-media video:not([hidden]) ~ picture { display: none; }
 .hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, var(--coal) 0%, rgba(20,18,15,.72) 45%, rgba(20,18,15,.35) 100%); }
 .ember-glow { position: absolute; left: 55%; bottom: -20%; width: 70vmax; height: 70vmax; border-radius: 50%; transform: translateX(-50%); pointer-events: none;
   background: radial-gradient(circle, rgba(255,140,70,.35) 0%, rgba(224,86,42,.18) 25%, rgba(122,43,18,.08) 45%, transparent 65%); filter: blur(10px);
@@ -207,6 +208,7 @@ body[data-heat="cold"] .ember-glow { opacity: .15; }
 /* 業務の静物: 手書きの表が整列する */
 .stilllife { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: var(--coal-3); border: 1px solid var(--line); margin-top: 22px; }
 .stilllife img, .stilllife video { width: 100%; height: 100%; object-fit: cover; }
+.stilllife img ~ .grid-anim { display: none; }
 .stilllife .grid-anim { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(5, 1fr); gap: 6px; padding: 18px; }
 .stilllife .grid-anim i { display: block; background: rgba(239,230,216,.12); border: 1px solid rgba(239,230,216,.25); border-radius: 3px; transform: translate(var(--dx), var(--dy)) rotate(var(--r)); transition: transform 1.2s var(--ease), background .8s; }
 .stilllife.in .grid-anim i { transform: none; background: rgba(240,138,98,.18); border-color: rgba(240,138,98,.5); }

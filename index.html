@@ -61,6 +61,10 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="hero-media heat-layer" aria-hidden="true">
       <!-- 生成した熾火のループ動画を assets/ember.mp4 に置くと再生されます。無い間は canvas が熾火を描きます。 -->
+      <picture>
+        <source media="(max-width: 720px)" srcset="assets/ember-poster-m.jpg">
+        <img class="ember-still" src="assets/ember-poster.jpg" alt="" width="1920" height="1067" fetchpriority="high" decoding="async">
+      </picture>
       <video id="ember-video" autoplay muted loop playsinline preload="none" poster="assets/ember-poster.jpg" hidden>
         <source src="assets/ember.mp4" type="video/mp4">
       </video>
@@ -85,7 +89,7 @@
         <ul class="trust">
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span><b>西村 直樹</b>山梨県韮崎市を拠点に、全国オンライン対応</span></li>
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg><span><b>ICF認定スクール CAM・CCAP／Google AI Specialization</b>対話の技術と、AIの実務知識</span></li>
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg><span><b>元ITエンジニア</b>自分の事業のシフトと予約も、自分で自動化して運用中</span></li>
+          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg><span><b>元ITエンジニア</b>自分の事業のシフト管理も、自分で自動化して運用中</span></li>
         </ul>
       </aside>
     </div>
@@ -202,7 +206,7 @@
             <p class="service-no">02</p>
             <h3>退屈な作業を渡す、AI導入</h3>
             <p class="for">個人事業主・飲食店・小規模店舗から、部署単位で導入したい企業まで</p>
-            <p class="desc">シフト作成、予約受付、日報や告知文の下書き。毎週同じ手を動かしている作業をAIと既製ツールに渡し、あなたの時間を熱のある仕事に戻します。自分の事業のシフトと予約を自作して回している経験から、「作りすぎない」導入を設計します。<strong>お客様の機密情報は預かりません。</strong>設定はダミーデータで行い、本番のデータはあなた自身が投入する運用です。</p>
+            <p class="desc">シフト作成、予約受付、日報や告知文の下書き。毎週同じ手を動かしている作業をAIと既製ツールに渡し、あなたの時間を熱のある仕事に戻します。自分の事業のシフト管理を自作して回している経験から、「作りすぎない」導入を設計します。<strong>お客様の機密情報は預かりません。</strong>設定はダミーデータで行い、本番のデータはあなた自身が投入する運用です。</p>
             <div class="stilllife heat-layer" id="stilllife" aria-hidden="true">
               <!-- 生成した「業務の静物」を assets/stilllife.jpg に置くと表示されます。無い間は表が整列するアニメーションを表示。 -->
               <img src="assets/stilllife.jpg" alt="" width="1600" height="900" loading="lazy" onerror="this.remove()">
@@ -280,13 +284,13 @@
       <div class="case reveal">
         <div>
           <p class="meta">CASE 01 — 自社運用</p>
-          <h3>自分の事業のシフトと予約を、自作して回す</h3>
-          <p>自分の活動のシフト管理と予約受付を、Notion と Google Apps Script で組んで運用しています。希望の集約、枠の自動生成、確定の通知までを自動化し、毎週の調整作業をほぼゼロにしました。この構成をそのまま渡すのではなく、お客様の規模に合う既製ツールに置き換えて導入します。</p>
-          <div class="stack"><span>Notion</span><span>Google Apps Script</span><span>Claude</span><span>Codex</span></div>
+          <h3>自分の事業のシフト管理を、自作して回す</h3>
+          <p>自分の事業のシフト管理アプリを Google Apps Script で作り、確定したシフトや変更を Slack に自動で流す仕組みと合わせて運用しています。希望の集約からシフト表の作成、関係者への通知までを自動化し、毎週の調整と連絡の手作業をなくしました。この構成をそのまま渡すのではなく、お客様の規模に合う既製ツールに置き換えて導入します。</p>
+          <div class="stack"><span>Google Apps Script</span><span>Slack</span><span>Claude</span><span>Codex</span></div>
         </div>
         <div class="case-figure">
           <!-- 実際の画面のスクリーンショットを assets/case-01.png に置くと表示されます -->
-          <img src="assets/case-01.png" alt="自作したシフト・予約管理の画面" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='画面キャプチャ準備中'">
+          <img src="assets/case-01.png" alt="自作したシフト管理アプリと Slack 通知の画面" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='画面キャプチャ準備中'">
         </div>
       </div>
       <div class="case reveal" style="margin-top:20px">

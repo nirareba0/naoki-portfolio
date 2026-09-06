@@ -2,3 +2,4 @@
 Thumbs.db
 _*.html
 .env
+gen/
