@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>西村直樹｜熱意の編集者 — サイト作成・AI導入・伴走コーチング（山梨・韮崎／オンライン）</title>
+<title>西村直樹｜編集者・ライター — サイト作成・AI導入・伴走コーチング（山梨・韮崎／オンライン）</title>
 <meta name="description" content="「編集を“あなた”にも」。対話であなたの熱意を掘り出し、伝わる形に編集します。協力隊・個人事業主のホームページ作成、飲食店から企業までのAI導入（予約サイト・シフト自動化・研修）、伴走コーチング。山梨県韮崎市を拠点に全国オンライン対応。">
-<link rel="canonical" href="https://example.com/"><!-- TODO: 公開URLに差し替え -->
+<!-- 公開先URLの確定後にcanonicalを設定 -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="西村直樹｜熱意の編集者">
+<meta property="og:title" content="西村直樹｜編集者・ライター">
 <meta property="og:description" content="対話であなたの熱意を掘り出し、伝わる形に編集します。サイト作成・AI導入・伴走コーチング。">
-<meta property="og:image" content="https://example.com/assets/og.png"><!-- TODO -->
+<meta property="og:image" content="assets/ember-poster.jpg">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#14120f">
@@ -18,17 +18,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="portfolio.css">
 <script>document.documentElement.classList.remove('no-js');</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "西村直樹｜熱意の編集者",
+  "name": "西村直樹｜編集者・ライター",
   "founder": { "@type": "Person", "name": "西村 直樹", "sameAs": ["https://www.facebook.com/profile.php?id=100005521930493"] },
   "description": "対話であなたの熱意を掘り出し、伝わる形に編集します。ホームページ作成、AI導入（予約サイト・シフト自動化・研修）、伴走コーチング。",
   "areaServed": ["山梨県韮崎市", "日本全国（オンライン）"],
   "address": { "@type": "PostalAddress", "addressLocality": "韮崎市", "addressRegion": "山梨県", "addressCountry": "JP" },
-  "url": "https://example.com/",
   "makesOffer": [
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "あなたを表現するホームページ作成" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI導入（問いから始める業務の編集）" } },
@@ -42,7 +42,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="西村直樹 熱意の編集者 トップへ"><span class="mark" aria-hidden="true"></span>西村直樹<small>熱意の編集者</small></a>
+    <a class="brand" href="#top" aria-label="西村直樹 編集者・ライター トップへ"><span class="mark" aria-hidden="true"></span>西村直樹<small>編集者・ライター</small></a>
     <nav class="nav" aria-label="メイン">
       <ul>
         <li><a href="#services">できること</a></li>
@@ -68,57 +68,49 @@
       <video id="ember-video" autoplay muted loop playsinline preload="none" poster="assets/ember-poster.jpg" hidden>
         <source src="assets/ember.mp4" type="video/mp4">
       </video>
-      <canvas id="ember-canvas"></canvas>
       <div class="ember-glow"></div>
     </div>
     <div class="wrap">
       <div>
-        <p class="hero-kicker">EMBERS, EDITED</p>
-        <h1 class="headline" id="hero-title"><span class="w">熱は、</span><span class="w accent">編集</span><span class="w">できる。</span></h1>
-        <p class="hero-lead">
-          誰の中にもある熱は、揺らぎ、冷め、また灯る。<br>
-          <strong>対話で掘り出し、伝わる形に並べ直す。</strong>サイトも、業務も、次の一歩も。
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#contact">無料で相談してみる<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <span class="sub">初回30分のヒアリングは無料です</span>
-        </div>
+        <p class="hero-kicker">NAOKI NISHIMURA <span>—</span> PERSONAL PORTFOLIO</p>
+        <h1 class="headline" id="hero-title"><span class="w">あなたの熱は、</span><br><span class="w"><em>編集</em>できる。</span></h1>
+        <p class="hero-lead">つくりたいもの。変えたい仕事。まだ言葉にならない想い。<br>対話からはじめて、サイトと仕組みと、次の一歩をつくります。</p><p class="hero-services">WEB DESIGN <span>/</span> AI & AUTOMATION <span>/</span> COACHING</p>
+        <div class="hero-actions"><a class="btn" href="#case">つくったものを見る <span aria-hidden="true">↘</span></a><a class="hero-contact" href="#contact">まずは、話してみる <span aria-hidden="true">↗</span></a></div>
       </div>
-      <aside class="hero-side" aria-label="信頼の根拠">
-        <ul class="trust">
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span><b>西村 直樹</b>山梨県韮崎市を拠点に、全国オンライン対応</span></li>
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9L9.5 8z"/></svg><span><b>ICF認定スクール CAM Japan 認定コーチ（CCAP）</b>Google AI Specialization 修了。対話の技術と、AIの実務知識</span></li>
-          <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg><span><b>元ITエンジニア</b>自分の事業のシフト管理も、自分で自動化して運用中</span></li>
-        </ul>
+      <aside class="hero-side" aria-label="西村直樹について">
+        <div class="hero-note"><span class="edition">BASED IN NIRASAKI, YAMANASHI</span><p>ひとの熱に、<br>手を添える仕事。</p><span class="note-rule"></span><span class="note-caption">対話で見つける。編集で届ける。</span></div>
+        <a class="hero-person" href="#profile"><img src="assets/portrait.jpg" alt="" width="64" height="64"><span><strong>西村 直樹</strong><small>編集者・ライター</small></span><span aria-hidden="true">↗</span></a>
       </aside>
     </div>
+    <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">背景の動きを止める Ⅱ</button>
   </section>
 
   <!-- ========== MARQUEE ========== -->
-  <div class="marquee" aria-label="活動・提供しているもの">
-    <div class="marquee-track">
-      <ul>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-1.5.5-3 1.5-4 .3 1.2 1 2 2 2.5C10 8 11 5.5 12 3z"/></svg>にらレバ<span class="tag">LOCAL</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5M12 20c0-3 1.7-5 4-5s6 2 6 5"/></svg>100人カイギ<span class="tag">COMMUNITY</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h9a3 3 0 0 1 3 3v12H7a3 3 0 0 0-3 3z"/><path d="M20 5h-4v15h4z"/></svg>YOMU哲<span class="tag">哲学対話</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v10H9l-5 4z"/></svg>コーチング<span class="tag">1on1</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>サイト作成<span class="tag">WEB</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>シフト自動化<span class="tag">AI</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3"/></svg>予約サイト<span class="tag">AI</span></li>
-        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h4"/></svg>ジャーナリング<span class="tag">内省</span></li>
-      </ul>
-      <ul aria-hidden="true">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-1.5.5-3 1.5-4 .3 1.2 1 2 2 2.5C10 8 11 5.5 12 3z"/></svg>にらレバ<span class="tag">LOCAL</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5M12 20c0-3 1.7-5 4-5s6 2 6 5"/></svg>100人カイギ<span class="tag">COMMUNITY</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h9a3 3 0 0 1 3 3v12H7a3 3 0 0 0-3 3z"/><path d="M20 5h-4v15h4z"/></svg>YOMU哲<span class="tag">哲学対話</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v10H9l-5 4z"/></svg>コーチング<span class="tag">1on1</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>サイト作成<span class="tag">WEB</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>シフト自動化<span class="tag">AI</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3"/></svg>予約サイト<span class="tag">AI</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h4"/></svg>ジャーナリング<span class="tag">内省</span></li>
-      </ul>
+  <div class="project-ribbon" aria-label="制作と活動"><div class="ribbon-heading"><span>PROJECTS & ACTIVITIES</span><button type="button" id="ribbon-toggle" aria-pressed="false">動きを止める <span aria-hidden="true">Ⅱ</span></button></div><div class="marquee"><div class="marquee-track"><ul><li><a href="#work-kaigi"><img src="assets/icon-kaigi.png" alt="" width="64" height="56"><span>100人カイギ<small>COMMUNITY WEBSITE</small></span></a></li><li><a href="#work-personal"><img src="assets/mark-personal.svg" alt="" width="64" height="56"><span>編集者・ライター<small>PERSONAL WEBSITE</small></span></a></li><li><a href="#work-moshimo"><img src="assets/mark-moshimo.svg" alt="" width="64" height="56"><span>山梨もしも財団<small>FOUNDATION WEBSITE</small></span></a></li><li><a href="#shift"><img src="assets/mark-shift.svg" alt="" width="64" height="56"><span>シフト作成サポート<small>GAS × SPREADSHEETS × AI</small></span></a></li><li><a href="#activities"><img src="assets/mark-yomutetsu.svg" alt="" width="64" height="56"><span>ヨムテツ<small>哲学対話</small></span></a></li><li><a href="#activities"><img src="assets/icon-nirareba.png" alt="" width="64" height="56"><span>にらレバ<small>LOCAL MEDIA</small></span></a></li></ul><ul aria-hidden="true"><li><span class="project-copy"><img src="assets/icon-kaigi.png" alt="" width="64" height="56"><span>100人カイギ<small>COMMUNITY WEBSITE</small></span></span></li><li><span class="project-copy"><img src="assets/mark-personal.svg" alt="" width="64" height="56"><span>編集者・ライター<small>PERSONAL WEBSITE</small></span></span></li><li><span class="project-copy"><img src="assets/mark-moshimo.svg" alt="" width="64" height="56"><span>山梨もしも財団<small>FOUNDATION WEBSITE</small></span></span></li><li><span class="project-copy"><img src="assets/mark-shift.svg" alt="" width="64" height="56"><span>シフト作成サポート<small>GAS × SPREADSHEETS × AI</small></span></span></li><li><span class="project-copy"><img src="assets/mark-yomutetsu.svg" alt="" width="64" height="56"><span>ヨムテツ<small>哲学対話</small></span></span></li><li><span class="project-copy"><img src="assets/icon-nirareba.png" alt="" width="64" height="56"><span>にらレバ<small>LOCAL MEDIA</small></span></span></li></ul></div></div></div>
+
+  <section class="section works-section" id="case" aria-labelledby="case-title">
+    <div class="wrap">
+      <div class="works-heading reveal"><div><p class="eyebrow">01 / SELECTED WORKS</p><h2 class="section-title" id="case-title">想いが、かたちになったもの。</h2></div><p>ひとりの仕事から、街のつながりまで。<br>それぞれの「伝えたい」に、合うかたちを。</p></div>
+      <div class="works-grid">
+        <article class="work-card reveal" id="work-kaigi"><a class="work-visual work-kaigi" href="https://nirasakikaigi.netlify.app/" target="_blank" rel="noopener" aria-label="韮崎市100人カイギのサイトを見る（新しいタブ）"><span class="work-browser"><i></i><i></i><i></i><small>nirasakikaigi.netlify.app</small></span><div class="work-preview"><img src="assets/act-kaigi.jpg" alt="韮崎市100人カイギの会場" width="900" height="600" loading="lazy"><div><span>NIRASAKI 100 PEOPLE</span><strong>人を知る。<br>街が変わる。</strong><small>韮崎市100人カイギ</small></div></div><span class="work-open" aria-hidden="true">↗</span></a><div class="work-info"><span class="work-index">01 — COMMUNITY</span><h3>韮崎市100人カイギ</h3><p>街で暮らし、働く人たちの物語を届けるサイト。</p><div class="work-tags"><span>Webサイト</span><span>コミュニティ</span></div></div></article>
+        <article class="work-card reveal" id="work-personal"><a class="work-visual work-personal" href="#top" aria-label="この個人サイトのトップを見る"><span class="work-browser"><i></i><i></i><i></i><small>NAOKI NISHIMURA</small></span><div class="work-preview"><img src="assets/ember-poster.jpg" alt="熾火を背景にした個人サイトのイメージ" width="1280" height="704" loading="lazy"><div><span>EMBERS, EDITED</span><strong>あなたの熱は、<br>編集できる。</strong><small>西村直樹 ｜ 編集者・ライター</small></div></div><span class="work-open" aria-hidden="true">↑</span></a><div class="work-info"><span class="work-index">02 — PERSONAL</span><h3>編集者・ライター / このサイト</h3><p>仕事と活動を、ひとつの言葉と世界観でつなぐ。</p><div class="work-tags"><span>Webサイト</span><span>コピー・設計・実装</span></div></div></article>
+        <article class="work-card reveal" id="work-moshimo">
+          <div class="work-visual work-moshimo">
+            <span class="work-browser"><i></i><i></i><i></i><small>yamanashifund.org</small></span>
+            <div class="fund-preview">
+              <video id="fund-intro" muted playsinline preload="metadata" poster="assets/yamanashi-fund-live.png" width="1200" height="800" aria-hidden="true">
+                <source src="assets/yamanashi-fund-intro.mp4" type="video/mp4">
+              </video>
+              <button class="fund-replay" id="fund-replay" type="button"><span aria-hidden="true">↻</span> 導入をもう一度見る</button>
+            </div>
+            <a class="work-open" href="https://yamanashifund.org/" target="_blank" rel="noopener" aria-label="山梨もしも財団のサイトを見る（新しいタブで開きます）">↗</a>
+          </div>
+          <div class="work-info"><span class="work-index">03 — FOUNDATION</span><h3>山梨もしも財団</h3><p>財団の活動を伝えるWebサイト。トップページの導入アニメーションを紹介しています。</p><div class="work-tags"><span>Webサイト</span><span>財団</span></div></div>
+        </article>
+      </div>
+      <article class="shift-case reveal" id="shift"><div class="shift-intro"><p class="eyebrow">IN PRACTICE / 自分の事業で使う仕組み</p><h3>シフトづくりに、<br>白紙から悩まない。</h3><p>スタッフがGASアプリで休み希望を入力。スプレッドシートに集まった希望をもとに、AIがシフトのベースをつくります。最後の確認・調整は人の手で。</p><div class="work-tags"><span>Google Apps Script</span><span>スプレッドシート</span><span>AI</span></div></div><figure class="shift-film"><div class="film-head"><span><i></i> SHIFT WORKFLOW</span><span>18 SEC / DEMO</span></div><video id="shift-video" controls muted playsinline preload="none" poster="assets/shift-poster.jpg" width="1280" height="800" aria-label="シフト作成の流れを示す18秒のイメージ動画"><source src="assets/shift-workflow.mp4" type="video/mp4"><track kind="captions" src="assets/shift-ja.vtt" srclang="ja" label="日本語" default>動画を再生できない場合は、下の手順をご覧ください。</video><figcaption>操作イメージ・架空のデータを使ったデモです。</figcaption></figure><ol class="shift-steps"><li><span>01</span><div><strong>休み希望を入力</strong><small>GASアプリから、スタッフ自身で</small></div></li><li><span>02</span><div><strong>シートに反映</strong><small>希望を一覧に、転記の手間を減らす</small></div></li><li><span>03</span><div><strong>AIがベースを作成</strong><small>人が確認・調整して、確定へ</small></div></li></ol></article>
     </div>
-  </div>
+  </section>
 
   <!-- ========== 編集の実演（赤入れ） ========== -->
   <section class="section" id="edit" aria-labelledby="edit-title">
@@ -168,7 +160,7 @@
   <section class="section" id="services" aria-labelledby="services-title">
     <div class="wrap">
       <div class="section-head reveal">
-        <p class="eyebrow">できること</p>
+        <p class="eyebrow">02 / WHAT I DO</p>
         <h2 class="section-title" id="services-title">3つの入口。どれも「対話」から始まります。</h2>
         <p class="section-lead">料金は目安です（税込）。内容と期間によって変わるので、まず状況を聞かせてください。初回30分のヒアリングは無料です。</p>
       </div>
@@ -178,6 +170,7 @@
           <div>
             <p class="service-no">01 <span class="badge">主軸</span></p>
             <h3>あなたを表現するホームページ作成</h3>
+            <p><a class="service-detail-link" href="web-design.html">対話からつくるサイト制作を詳しく見る <span aria-hidden="true">↗</span></a></p>
             <p class="for">地域おこし協力隊・個人事業主・小さなお店やプロジェクトの方へ</p>
             <p class="desc">テンプレートに情報を流し込むのではなく、まず対話であなたの熱意と言葉を掘り出します。対話の資格を持つ元エンジニアが、ヒアリングから設計・デザイン・実装・公開まで一人で担当。公開後は「言葉が変わったら、サイトも変える」伴走を続けられます。</p>
           </div>
@@ -204,6 +197,7 @@
           <div>
             <p class="service-no">02</p>
             <h3>AIを入れる前に、問いを入れる。</h3>
+            <p><a class="service-detail-link" href="ai-coaching.html">AI導入 × コーチングを詳しく見る <span aria-hidden="true">↗</span></a></p>
             <p class="for">AI導入 — 個人事業主・飲食店・小規模店舗から、部署単位で導入したい企業まで</p>
             <p class="desc lead-copy">どの作業をAIに渡し、どの仕事をあなたの手に残すか。その答えは、もうあなたの頭の中にあります。私がするのは、対話でそれを取り出し、整えるお手伝いです。</p>
             <p class="desc">シフト作成、予約受付、日報や告知文の下書き。毎週同じ手を動かしている作業をAIと既製ツールに渡し、あなたの時間を熱のある仕事に戻します。自分の事業のシフト管理を自作して回している経験から、「作りすぎない」導入を設計します。<strong>お客様の機密情報は預かりません。</strong>設定はダミーデータで行い、本番のデータはあなた自身が投入する運用です。</p>
@@ -259,7 +253,7 @@
               <ul class="deliver">
                 <li>60分のオンライン／対面セッション</li>
                 <li>セッション間のテキストでの振り返り</li>
-                <li>ジャーナリングなど、ひとりで続けられる型の共有</li>
+                <li>対話で見つけた気づきと、次の一歩の整理</li>
               </ul>
             </div>
             <div>
@@ -270,40 +264,6 @@
             </div>
           </div>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CASE ========== -->
-  <section class="section" id="case" aria-labelledby="case-title">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">事例</p>
-        <h2 class="section-title" id="case-title">まず、自分の事業で試しています。</h2>
-        <p class="section-lead">人に勧める前に、自分が毎日使っているものだけを提案します。</p>
-      </div>
-      <div class="case reveal">
-        <div>
-          <p class="meta">CASE 01 — 自社運用</p>
-          <h3>自分の事業のシフト管理を、自作して回す</h3>
-          <p>自分の事業のシフト管理アプリを Google Apps Script で作り、確定したシフトや変更を Slack に自動で流す仕組みと合わせて運用しています。希望の集約からシフト表の作成、関係者への通知までを自動化し、毎週の調整と連絡の手作業をなくしました。この構成をそのまま渡すのではなく、お客様の規模に合う既製ツールに置き換えて導入します。</p>
-          <div class="stack"><span>Google Apps Script</span><span>Slack</span><span>Claude</span><span>Codex</span></div>
-        </div>
-        <div class="case-figure">
-          <!-- 実際の画面のスクリーンショットを assets/case-01.png に置くと表示されます -->
-          <img src="assets/case-01.png" alt="自作したシフト管理アプリと Slack 通知の画面" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='画面キャプチャ準備中'">
-        </div>
-      </div>
-      <div class="case reveal" style="margin-top:20px">
-        <div>
-          <p class="meta">CASE 02 — このサイト</p>
-          <h3>このサイト自体が、編集の事例です</h3>
-          <p>誰にも見せない前提で書いた「原典」という文書から、事業計画、そしてこのページの言葉を翻訳して作りました。上の赤入れは、その過程で実際に起きたことです。あなたのサイトも、同じ手順で作ります。</p>
-          <div class="stack"><span>ヒアリング対話</span><span>コピー編集</span><span>設計・実装</span></div>
-        </div>
-        <div class="case-figure">
-          <img src="assets/case-02.png" alt="このサイトの制作過程" width="1200" height="900" loading="lazy" onerror="this.parentNode.textContent='制作過程の画像 準備中'">
-        </div>
       </div>
     </div>
   </section>
@@ -336,9 +296,9 @@
           </div>
         </div>
         <div class="reveal">
-          <p class="eyebrow">プロフィール</p>
+          <p class="eyebrow">03 / ABOUT ME</p>
           <h2 class="profile-name" id="profile-title">西村 直樹<small>NISHIMURA NAOKI</small></h2>
-          <p class="profile-role">熱意の編集者／コーチ／エンジニア</p>
+          <p class="profile-role">編集者・ライター</p>
           <div class="profile-story">
             <p>キャリアの出発点はITエンジニアでした。仕事は退屈で、タイパだけで動く日々。その退屈から逃れるために会社を辞め、個人として働く道を選びました。</p>
             <p>転機は、批評ラジオやエッセイとの出会いです。自分の視野の狭さ、言語化の稚拙さを自覚し、「では何をすればいいか」を探る行為そのものが面白くなった。内省にハマり、ジャーナリングが続き、哲学対話の場に通うようになりました。</p>
@@ -362,18 +322,18 @@
   <section class="section" id="activities" aria-labelledby="acts-title">
     <div class="wrap">
       <div class="section-head reveal">
-        <p class="eyebrow">活動</p>
+        <p class="eyebrow">04 / AROUND THE TOWN</p>
         <h2 class="section-title" id="acts-title">韮崎で、場をつくり、対話を回す。</h2>
         <p class="section-lead">サービスの外で続けている活動です。ここで見ているものが、仕事の土台になっています。</p>
       </div>
       <div class="acts">
         <article class="act reveal">
-          <a class="act-media" href="https://www.instagram.com/p/DVOAICiElMl/" target="_blank" rel="noopener" aria-label="ヨムテツの告知投稿（Instagram、新しいタブで開きます）">
-            <img src="assets/act-yomutetsu.jpg" alt="ヨムテツの告知ポスター。YOMUでみんなアレコレ哲学対話、テーマは本屋にある問い" width="900" height="600" loading="lazy">
+          <a class="act-media act-media-square" href="https://www.instagram.com/p/DVOAICiElMl/" target="_blank" rel="noopener" aria-label="ヨムテツの告知投稿（Instagram、新しいタブで開きます）">
+            <img src="assets/yomutetsu-full.jpg" alt="ヨムテツの告知ポスター全体。本屋にある問いをテーマにした哲学対話、vol.02" width="1440" height="1615" loading="lazy">
           </a>
           <div class="act-body">
             <p class="role"><span class="dot" aria-hidden="true"></span>哲学対話／ファシリテーター</p>
-            <h3>ヨムテツ<small>YOMU哲</small></h3>
+            <h3>ヨムテツ<small>哲学対話</small></h3>
             <p>韮崎の本屋「YOMU」で開く哲学対話。店内を歩いて本のタイトルや目次から「問い」を拾い、輪になって話します。沈黙も、まとまらない話も歓迎。定員8名の小さな会を、ファシリテーターとして進めています。</p>
             <a class="act-link" href="https://www.instagram.com/p/DVOAICiElMl/" target="_blank" rel="noopener">Instagram で見る<span class="visually-hidden">（新しいタブで開きます）</span> →</a>
           </div>
@@ -469,51 +429,14 @@
           </div>
         </aside>
 
-        <!-- FormSubmit: 初回送信後に届く確認メールで有効化。有効化後は action を発行された英数字エイリアスURLに差し替えるとメールアドレスが露出しません。 -->
-        <form class="form" id="contact-form" action="https://formsubmit.co/naoki.nishimura@kawarabe.com" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="【サイト】お問い合わせ">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" id="next-url" value="thanks.html">
-          <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <div class="field">
-            <label for="name">お名前 <span class="req">必須</span></label>
-            <input id="name" name="お名前" type="text" required autocomplete="name" aria-describedby="name-err">
-            <p class="error" id="name-err">お名前を入力してください。ニックネームでも構いません。</p>
-          </div>
-          <div class="field">
-            <label for="email">メールアドレス <span class="req">必須</span></label>
-            <input id="email" name="メールアドレス" type="email" required autocomplete="email" inputmode="email" aria-describedby="email-hint email-err">
-            <p class="hint" id="email-hint">返信先になります。入力ミスがあると返信が届きません。</p>
-            <p class="error" id="email-err">メールアドレスの形式で入力してください（例: name@example.com）。</p>
-          </div>
-          <div class="field">
-            <label for="kind">ご相談の種類 <span class="opt">任意</span></label>
-            <select id="kind" name="ご相談の種類">
-              <option value="">選んでください（決まっていなければ空欄で）</option>
-              <option>ホームページ作成</option>
-              <option>AI導入（予約・シフトなどの業務効率化）</option>
-              <option>AI研修・伴走（企業・団体）</option>
-              <option>伴走コーチング</option>
-              <option>その他・まだわからない</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">いまの状況・聞きたいこと <span class="req">必須</span></label>
-            <textarea id="message" name="ご相談内容" required minlength="10" aria-describedby="message-hint message-err"></textarea>
-            <p class="hint" id="message-hint">ひとことでも大丈夫です。整っていなくて構いません。機密情報は書かないでください。</p>
-            <p class="error" id="message-err">10文字以上で入力してください。</p>
-          </div>
-          <div class="field">
-            <label class="consent" for="consent">
-              <input id="consent" name="プライバシーポリシー同意" type="checkbox" required value="同意する" aria-describedby="consent-err">
-              <span><a href="privacy.html">プライバシーポリシー</a>を読み、入力内容がご相談への返信のために使われることに同意します。<span class="req">必須</span></span>
-            </label>
-            <p class="error" id="consent-err">送信にはプライバシーポリシーへの同意が必要です。</p>
-          </div>
-          <button class="btn" type="submit">相談を送る<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="form-note">18歳未満の方は、保護者の方からご連絡ください。送信後、確認画面に移ります。</p>
-        </form>
+        <div class="google-contact" aria-labelledby="google-contact-title">
+          <p class="google-contact-label">CONTACT / GOOGLE FORMS</p>
+          <h3 id="google-contact-title">ご相談は、Googleフォームから。</h3>
+          <p>いまの状況や、聞いてみたいことをお送りください。内容を確認して、西村本人からメールでお返事します。</p>
+          <a class="btn" id="google-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd0KixjZ9qp4IN2YhDHNsjw01QhMLWU0YslcL0QJP-TNa-7_g/viewform" target="_blank" rel="noopener">Googleフォームで相談する<span class="visually-hidden">（新しいタブで開きます）</span></a>
+          <p class="google-contact-note">Googleフォームの画面で入力・送信いただく形式です。</p>
+          <p class="google-contact-privacy"><a href="privacy.html">プライバシーポリシー</a><br>18歳未満の方は、保護者の方からご連絡ください。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -521,16 +444,17 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>&copy; <span id="year">2026</span> 西村直樹｜熱意の編集者</p>
+    <p>&copy; <span id="year">2026</span> 西村直樹｜編集者・ライター</p>
     <ul>
       <li><a href="privacy.html">プライバシーポリシー</a></li>
       <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=100005521930493" target="_blank" rel="noopener">Facebook</a></li>
     </ul>
-    <p class="ai-note">このサイトの熾火・机上の静物などの背景映像・画像は、生成AIで制作したイメージです。人物写真と活動の写真は実写です。</p>
+    <p class="ai-note">熾火・机上の静物は生成AIによるイメージです。シフト動画は架空のデータによる操作イメージ。事例カードのビジュアルと一部のアイコンは、このページ用の紹介デザインです。</p>
   </div>
 </footer>
 
 <script src="script.js" defer></script>
+<script src="portfolio.js" defer></script>
 </body>
 </html>
