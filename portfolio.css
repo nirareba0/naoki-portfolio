@@ -111,8 +111,9 @@ a.work-visual:hover { transform: translateY(-5px); }
 .act-media-logo img { padding: 20px; }
 .act-media:not(.act-media-square):not(.act-media-logo) { aspect-ratio: 1; }
 .btn { background: #ad4827; border-color: #ad4827; }
-.service-detail-link { display: inline-flex; align-items: center; gap: 22px; min-height: 44px; padding: 10px 0; margin: 5px 0 16px; color: #efb38c; font-size: 13px; text-underline-offset: 6px; }
-.service-detail-link:hover { color: #ffdbc0; }
+.service-detail-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; max-width: 100%; padding: 12px 17px; margin: 9px 0 20px; border: 1px solid #bc815b; border-radius: 3px; background: #35251c; color: #f4c7a8; font-size: 13px; line-height: 1.7; text-decoration: none; }
+.service-detail-link:hover { color: #fff1e3; background: #513223; border-color: #e0ac87; }
+.service-detail-link span { flex-shrink: 0; }
 .btn:hover { background: #983d20; border-color: #983d20; }
 .req { background: #a64023; }
 .contact .eyebrow { color: #a04428; }

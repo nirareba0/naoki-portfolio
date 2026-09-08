@@ -2,7 +2,11 @@
 
 静的サイト（HTML / CSS / JS のみ、ビルド不要）。
 
-ソースリポジトリ： https://github.com/nirareba0/naoki-portfolio （非公開）。サイトのホスティングは未設定。
+ソースリポジトリ： https://github.com/nirareba0/naoki-portfolio
+
+GitHub Pages： https://nirareba0.github.io/naoki-portfolio/ （mainブランチ直下を配信）
+
+Netlifyへの手動アップロード用フォルダとZIPは、作業フォルダ直下の `naoki-portfolio-netlify` と `naoki-portfolio-netlify.zip`。トップページから各LPへのボタンと、Googleフォームへの問い合わせリンクを設定済み。
 
 ## サービスLP
 
